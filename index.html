@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Blueprint</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="slider.js"></script>
 </head>
 <body>
     <header>
@@ -12,10 +13,40 @@
         <nav>
             <ul>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="blogs.html">Tech Startups in Africa</a></li>
+                <li><a href="blogs.html">Startups in Africa</a></li>
             </ul>
         </nav>
     </header>
+
+    <!--Interactive slider with pictures-->
+    <div id="slider-container">
+        <div class="slider-image">
+            <img src="images/washingmachine2.jpg" alt=" an image of a laundry room">
+        </div>
+        <div class="slider-image">
+            <img src="images/soapcloth.jpg" alt="Image of cloth being washed with soap.">
+        </div>
+        <div class="slider-image">
+            <img src="images/soapmaking.jpg" alt="Image of the soap making process ingredients">
+        </div>
+        <div class="slider-image">
+            <img src="images/barsoap.jpg" alt="Image of barsoap being used">
+        </div>
+        <div class="slider-image">
+            <img src="images/soap2making.jpg" alt="Image of soap making process">
+        </div>
+        <div class="slider-image">
+            <img src="images/washingmachine.jpg" alt="Image of washing machine with clothes">
+        </div>
+        <div class="slider-image">
+            <img src="images/teaching.JPG" alt="Image of founder teaching Entrepreneurship">
+        </div>
+        <!-- Add more slider images as needed -->
+    </div>
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+    <!--end of slider header-->
+
     <section>
         <h2>About Us</h2>
         <p>Welcome to Business Blueprint, your guide to navigating the startup world. We provide valuable tips and guidance from industry experts to help you succeed in your entrepreneurial journey.</p>
@@ -38,8 +69,16 @@
             </figcaption>
         </div>
     </section>
-    <section>
+    <section class="news">
         <h2>Latest Articles</h2>
+       
+            <ul>
+                <li><a href="https://example.com/startup-news-article-1">Startup News Article 1</a></li>
+                <li><a href="https://example.com/startup-news-article-2">Startup News Article 2</a></li>
+                <li><a href="https://example.com/startup-news-article-3">Startup News Article 3</a></li>
+                <!-- Add more articles as needed -->
+            </ul>
+        
         <!-- Insert some of your latest articles here -->
     </section>
     <footer>

@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #5b6d92;
     color: #333;
 }
 
@@ -28,17 +28,40 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* slider styling */
+#slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-image {
+    display: none;
+}
+
+.slider-image img {
+    width: 100%;
+}
+
+button {
+    margin-top: 10px;
+}
+/* end of slider styling */
+
 section {
     padding: 20px;
 }
+
 /* Style for founder's image and bio caption */
 .founder-bio {
     text-align: center;
     margin-bottom: 20px;
+    display: flex;
 }
 
 .founder-bio img {
     width: 200px; /* Adjust the width as needed */
+    height: fit-content;
     border-radius: 50%; /* Makes the image round */
     border: 5px solid #ffd700; /* Golden border */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
@@ -46,6 +69,7 @@ section {
 
 .founder-bio figcaption {
     margin-top: 10px;
+    height: fit-content;
     font-style: italic;
     color: #666;
     width: 200px; /* Set the same width as the image */
@@ -56,7 +80,6 @@ footer {
     background-color: #ffd700; /* Golden color */
     padding: 10px;
     text-align: center;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
