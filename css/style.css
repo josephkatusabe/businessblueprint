@@ -109,6 +109,42 @@ button {
 }
 /* end of slider styling */
 
+/* Latest Articles Section Styles */
+.latest-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #ccc;
+  }
+  
+  .article {
+    width: 30%; /* Adjust width as needed */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .article-info h2 {
+    margin-top: 0;
+  }
+  
+  .article-preview {
+    margin-bottom: 10px;
+  }
+  
+  .article a {
+    display: block;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  .article a:hover {
+    background-color: #0056b3;
+  }  
+
 section {
     padding: 20px;
 }
