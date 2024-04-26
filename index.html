@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Blueprint</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="slider.js"></script>
+    
 </head>
 <body>
     <header>
@@ -17,6 +17,8 @@
             </ul>
         </nav>
     </header>
+
+
 
     <!--Interactive slider with pictures-->
     <div id="slider-container">
@@ -43,8 +45,6 @@
         </div>
         <!-- Add more slider images as needed -->
     </div>
-    <button id="prevBtn">Previous</button>
-    <button id="nextBtn">Next</button>
     <!--end of slider header-->
 
     <section>
@@ -58,15 +58,20 @@
         <h3>Vission:</h3>
         <p>We strive to see a technologically advancing Africa.</p>
         <!--Image and bio for founder-->
-        <div class="founder-bio">
-            <img src="images/founder.jpg" alt="Founder's Image">
-            <figcaption>
-                As an entrepreneur with a foundation in Entrepreneurship since high school at the African Leadership Academy, 
-                I've successfully launched and scaled three ventures. 
-                Notably, my soap making business in Uganda currently generates over USD 1000 in annual revenue and is poised for expansion through strategic mergers and acquisitions. 
-                Additionally, my laundry mart business, projected to reach USD 1000 in monthly revenue, 
-                demonstrates potential for rapid growth with its strategic location changes and increasing client base.".
-            </figcaption>
+        <!-- Modal Trigger Button -->
+        <img id = "modal-btn" src="images/founder.jpg" alt="Founder's Image"></button>
+
+        <!-- Modal Window -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="images/founder.jpg" alt="Founder's Image">
+                <figcaption>As an entrepreneur with a foundation in Entrepreneurship since high school at the African Leadership Academy, 
+                    I've successfully launched and scaled three ventures. 
+                    Notably, my soap making business in Uganda currently generates over USD 1000 in annual revenue and is poised for expansion through strategic mergers and acquisitions. 
+                    Additionally, my laundry mart business, projected to reach USD 1000 in monthly revenue, 
+                    demonstrates potential for rapid growth with its strategic location changes and increasing client base.".</figcaption>
+            </div>
         </div>
     </section>
     <section class="news">
@@ -84,5 +89,6 @@
     <footer>
         <p>&copy; 2024 Business Blueprint. All rights reserved.</p>
     </footer>
+    <script src="slider.js"></script>
 </body>
 </html>
